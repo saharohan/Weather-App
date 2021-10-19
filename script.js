@@ -92,4 +92,4 @@ form.addEventListener("submit", (e) => {
   } else {
     alert("Please enter Location");
   }
-});
+})
