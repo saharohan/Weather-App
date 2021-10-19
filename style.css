@@ -1,0 +1,271 @@
+/* body {
+  background: linear-gradient(90deg, #188ff1 4%, #c3dad8 90%); /* #9df627*/
+
+#weather_wrapper {
+  width: 400px;
+  margin: 100px auto;
+}
+.weatherCard {
+  width: 400px;
+  height: 200px;
+  font-family: "Open Sans";
+  position: relative;
+}
+.currentTemp {
+  width: 300px;
+  height: 400px;
+  background: rgb(
+    4,
+    71,
+    92
+  ); /*          rgb(41, 41, 41); rgb(10, 72, 131);   */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.currentWeather {
+  width: 180px;
+  height: 200px;
+  background: rgb(180, 174, 174);
+  margin: 1;
+  position: absolute;
+  top: 0;
+  right: -81px;
+}
+.temp {
+  font-size: 80px;
+  text-align: center;
+  display: block;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  padding: 33px 0 0;
+}
+.location {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  display: block;
+}
+.conditions {
+  font-size: 80px;
+  display: block;
+  padding: 30px 0 0;
+  text-align: center;
+}
+.info {
+  width: 181px;
+
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 148px;
+  top: 150px;
+  font-size: 20px;
+  background: rgb(42, 178, 234);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.description {
+  width: 100%;
+  position: absolute;
+  left: 1px;
+  top: 15px;
+}
+
+.location.new1 {
+  font-size: 20px;
+  text-transform: none;
+}
+.location.new2 {
+  font-size: 20px;
+  text-transform: none;
+}
+.location.new3 {
+  font-size: 20px;
+  text-transform: none;
+}
+form {
+  margin: 100px;
+  text-align: center;
+}
+
+input {
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  min-width: 250px;
+  text-align: center;
+  margin-left: 100px;
+  border: 2px solid rgb(251, 251, 251);
+}
+
+.conditionsbox21 {
+  font-size: 18px;
+  display: block;
+  font-weight: 700;
+  color: rgb(170, 210, 248);
+  padding: 30px 0 0;
+  text-align: center;
+}
+.conditionsbox22 {
+  font-size: 18px;
+  display: block;
+  font-weight: 700;
+  color: rgb(170, 210, 248);
+  padding: 30px 0 0;
+  text-align: center;
+}
+.conditionsbox23 {
+  font-size: 18px;
+  display: block;
+  font-weight: 700;
+  color: rgb(170, 210, 248);
+  padding: 30px 0 0;
+  text-align: center;
+}
+.infobox2 {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 150px;
+  font-size: 20px;
+  background: rgb(42, 178, 234);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.descriptionbox2 {
+  width: 100%;
+  position: absolute;
+  left: 1px;
+  top: 15px;
+}
+.currentWeatherbox2 {
+  width: 180px;
+  height: 190px;
+  background: rgb(29, 110, 117); /* rgb(42, 167, 179);*/
+  margin: 1;
+  position: absolute;
+  top: 210px;
+  right: 1px;
+}
+
+.btn {
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+  border-radius: 25px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background: rgb(42, 178, 234);
+  backdrop-filter: blur(10px);
+
+  padding: 1.2rem 3rem;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn--hold {
+  top: 46.1rem;
+  /* border: 2px solid rgb(255, 255, 255); */
+}
+.btn--hold:hover {
+  background-color: rgb(3, 136, 224);
+  color: white;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.bg {
+  animation: slide 70s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(255, 118, 113) 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 25s;
+}
+
+.bg3 {
+  animation-duration: 25s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+.description2 {
+  width: 100%;
+
+  position: absolute;
+  left: 1px;
+  top: 15px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  display: block;
+}
+.info25 {
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 150px;
+  font-size: 20px;
+  background: rgb(75, 138, 255);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
